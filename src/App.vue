@@ -1,6 +1,8 @@
 <template>
     <div id="app">
-      <router-view></router-view>
+      <keep-alive>
+          <router-view></router-view>
+      </keep-alive>
       <maintabbar></maintabbar>
     </div>
   </template>
@@ -10,7 +12,7 @@
   export default {
     name: 'App',
     
-    components:{
+    components: {
       maintabbar
     }
   }
@@ -18,6 +20,5 @@
    
   <style>
   @import "./assets/css/base.css";
-  
   </style>
   

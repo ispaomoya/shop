@@ -54,6 +54,6 @@ export default {
     vertical-align: middle;
 }
 .tabbaritemtext{
-    color: #f24f6b;
+    color: #ff8198;
 }
 </style>
