@@ -1,6 +1,8 @@
 <template>
     <div id="app">
-      <keep-alive>
+      <!-- export default {
+    name: 'detailsssss' -->
+      <keep-alive exclude="detailsssss">
           <router-view></router-view>
       </keep-alive>
       <maintabbar></maintabbar>

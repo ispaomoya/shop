@@ -1,5 +1,5 @@
 <template>
-    <div class="goods-item">
+    <div class="goods-item" @click="itemclick">
         <img :src="goodsitem.show.img" alt="">
         <div class="goods-info">
             <p>{{goodsitem.title}}</p>
@@ -18,6 +18,13 @@ export default {
                 return {}
             }
         }
+    },
+    methods: {
+      itemclick() {
+        //router文件夹下面的index.js路由配置里面，detail/:id，，，，要带/:id这个参数，不然下面这条带参数过去会让页面空白
+        //后面跟什么参数名，就写什么参数名，例，带iid参数，就写/:iid
+        this.$router.push('/detail/' + this.goodsitem.iid)
+      }
     }
 }
 </script>
